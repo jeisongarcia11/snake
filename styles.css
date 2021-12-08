@@ -1,0 +1,62 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/*Tamaño maximo del tablero*/
+#board, .boardInfo {
+    max-width: 800px;
+}
+
+/*Repite 10 elementos y le da el valor de 1 a las comlumnas*/
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: crimson;
+    border: none;
+    color: white;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+/*Se agrega para que sean cuadrados*/
+.square {
+    aspect-ratio: 1;
+}
+
+/*Estilos de los cuadros*/
+
+/*Cuadrado vacio*/
+.emptySquare {
+    background-color: #6d71b5;
+}
+
+/*Cuadrado de serpiente*/
+.snakeSquare {
+    background-color: #e3e773;
+    border: 1px solid #000;
+}
+
+/*Comida de serpiente*/
+.foodSquare {
+    background-color: #55e7e7;
+    border: 1px solid #000;
+}
